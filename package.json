@@ -1,5 +1,5 @@
 {
-  "name": "ngrx-exemple",
+  "name": "ngrx-examples",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -21,7 +21,8 @@
     "@angular/router": "~10.2.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
-    "zone.js": "~0.10.2"
+    "zone.js": "~0.10.2",
+    "@ngrx/store": "^10.1.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1002.0",

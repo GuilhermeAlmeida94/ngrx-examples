@@ -1,0 +1,9 @@
+<h4>{{ title }}</h4>
+
+<ul *ngFor="let pokemon of pokemonArray$ | async ">
+  <li> <button (click)="selectPokemon(pokemon)"> {{ pokemon.name }} </button>  </li>
+</ul>
+
+<div *ngIf="pokemonStore$ | async as pokemonStore">
+  <img [src]="pokemonStore.pokemon.img" />
+</div>
