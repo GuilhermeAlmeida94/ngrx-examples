@@ -15,10 +15,16 @@ const initialState: PokemonState = {
 
 export const pokemonReducer = createReducer(
     initialState,
-    on(PokemonActions.choosePokemon, (state: PokemonState , pokemon: any) => {
+    on(PokemonActions.choosePokemon, (state: PokemonState, pokemon: any) => {
         return {
             ...state,
             currentPokemon: pokemon
+        } as PokemonState;
+    }),
+    on(PokemonActions.clearPokemon, (state: PokemonState) => {
+        return {
+            ...state,
+            currentPokemon: {}
         } as PokemonState;
     })
 );

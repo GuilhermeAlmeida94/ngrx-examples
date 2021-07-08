@@ -25,4 +25,10 @@ export class NonTypedChoosePokemonComponent {
     );
   }
 
+  clearPokemon(): void {
+    this.store.dispatch(
+      { type: '[Non Typed Choose Pokemon] Clear information' }
+    );
+  }
+
 }

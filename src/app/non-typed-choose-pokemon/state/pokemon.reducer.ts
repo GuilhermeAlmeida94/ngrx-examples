@@ -9,5 +9,11 @@ export const pokemonReducer = createReducer(
             ...state,
             currentPokemon: action.pokemon
         };
+    }),
+    on(createAction('[Non Typed Choose Pokemon] Clear information'), state => {
+        return {
+            ...state,
+            currentPokemon: {}
+        };
     })
 );

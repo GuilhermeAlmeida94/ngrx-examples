@@ -21,4 +21,8 @@ export class TypedChoosePokemonComponent {
   selectPokemon(pokemon: any): void {
     this.store.dispatch(PokemonActions.choosePokemon(pokemon));
   }
+
+  clearPokemon(): void {
+    this.store.dispatch(PokemonActions.clearPokemon());
+  }
 }

@@ -1,7 +1,10 @@
 <h4>{{ title }}</h4>
 
-<ul *ngFor="let pokemon of pokemonArray$ | async ">
-  <li> <button (click)="selectPokemon()"> {{ pokemon.name }} </button>  </li>
+<ul>
+  <li *ngFor="let pokemon of pokemonArray$ | async ">
+    <button (click)="selectPokemon()"> {{ pokemon.name }} </button>
+  </li>
+  <li> <button (click)="clearPokemon()">Limpar</button> </li>
 </ul>
 
 <div *ngIf="pokemonStore$ | async as pokemonStore">
