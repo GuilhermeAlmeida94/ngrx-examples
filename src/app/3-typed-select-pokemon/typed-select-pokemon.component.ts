@@ -14,7 +14,7 @@ export class TypedSelectPokemonComponent {
     private pokemonService: PokemonService,
     private store: Store<State>) { }
 
-  title = 'Tipado com escolha';
+  title = 'Tipado com seleção';
   pokemonArray$ = this.pokemonService.pokemon$;
   currentPokemon$ = this.store.select(PokemonSelectors.getCurrentPokemon);
 
