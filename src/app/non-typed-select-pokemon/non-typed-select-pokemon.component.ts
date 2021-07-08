@@ -3,23 +3,23 @@ import { Store } from '@ngrx/store';
 import { PokemonService } from '../services/pokemon.service';
 
 @Component({
-  selector: 'app-non-typed-choose-pokemon',
-  templateUrl: './non-typed-choose-pokemon.component.html'
+  selector: 'app-non-typed-select-pokemon',
+  templateUrl: './non-typed-select-pokemon.component.html'
 })
-export class NonTypedChoosePokemonComponent {
+export class NonTypedSelectPokemonComponent {
 
   constructor(
     private pokemonService: PokemonService,
     private store: Store<any>) { }
 
-  title = 'Não tipado com escolha';
+  title = 'Não tipado com seleção';
   pokemonArray$ = this.pokemonService.pokemon$;
-  pokemonStore$ = this.store.select('nonTypedChoosePokemon');
+  pokemonStore$ = this.store.select('nonTypedSelectPokemon');
 
   selectPokemon(pokemon: any): void {
     this.store.dispatch(
       {
-        type: '[Non Typed Choose Pokemon] Choose Pokemon',
+        type: '[Non Typed Select Pokemon] Select Pokemon',
         pokemon
       }
     );
@@ -27,7 +27,7 @@ export class NonTypedChoosePokemonComponent {
 
   clearPokemon(): void {
     this.store.dispatch(
-      { type: '[Non Typed Choose Pokemon] Clear information' }
+      { type: '[Non Typed Select Pokemon] Clear information' }
     );
   }
 

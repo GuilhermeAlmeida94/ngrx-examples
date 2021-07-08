@@ -1,8 +1,8 @@
 import { createFeatureSelector, createSelector } from '@ngrx/store';
 import { PokemonState } from './pokemon.reducer';
 
-const getTypeChoosePokemonState = createFeatureSelector<PokemonState>('typedChoosePokemon');
+const getTypeSelectPokemonState = createFeatureSelector<PokemonState>('typedSelectPokemon');
 export const getCurrentPokemon = createSelector(
-    getTypeChoosePokemonState,
+    getTypeSelectPokemonState,
     state => state.currentPokemon
 );

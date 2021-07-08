@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { NonTypedChoosePokemonComponent } from './non-typed-choose-pokemon/non-typed-choose-pokemon.component';
+import { NonTypedSelectPokemonComponent } from './non-typed-select-pokemon/non-typed-select-pokemon.component';
 import { NonTypedPokemonComponent } from './non-typed-pokemon/non-typed-pokemon.component';
-import { TypedChoosePokemonComponent } from './typed-choose-pokemon/typed-choose-pokemon.component';
+import { TypedSelectPokemonComponent } from './typed-select-pokemon/typed-select-pokemon.component';
 
 const routes: Routes = [
   {
@@ -10,12 +10,12 @@ const routes: Routes = [
     component: NonTypedPokemonComponent
   },
   {
-    path: 'non-typed-choose-pokemon',
-    component: NonTypedChoosePokemonComponent
+    path: 'non-typed-select-pokemon',
+    component: NonTypedSelectPokemonComponent
   },
   {
-    path: 'typed-choose-pokemon',
-    component: TypedChoosePokemonComponent
+    path: 'typed-select-pokemon',
+    component: TypedSelectPokemonComponent
   }];
 
 @NgModule({

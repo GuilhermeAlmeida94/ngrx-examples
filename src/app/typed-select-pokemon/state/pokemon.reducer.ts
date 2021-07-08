@@ -15,7 +15,7 @@ const initialState: PokemonState = {
 
 export const pokemonReducer = createReducer(
     initialState,
-    on(PokemonActions.choosePokemon, (state: PokemonState, pokemon: any) => {
+    on(PokemonActions.selectPokemon, (state: PokemonState, pokemon: any) => {
         return {
             ...state,
             currentPokemon: pokemon

@@ -6,10 +6,10 @@ import * as PokemonActions from './state/pokemon.action';
 import * as PokemonSelectors from './state/pokemon.selector';
 
 @Component({
-  selector: 'app-typed-choose-pokemon',
-  templateUrl: './typed-choose-pokemon.component.html'
+  selector: 'app-typed-select-pokemon',
+  templateUrl: './typed-select-pokemon.component.html'
 })
-export class TypedChoosePokemonComponent {
+export class TypedSelectPokemonComponent {
   constructor(
     private pokemonService: PokemonService,
     private store: Store<State>) { }
@@ -19,7 +19,7 @@ export class TypedChoosePokemonComponent {
   currentPokemon$ = this.store.select(PokemonSelectors.getCurrentPokemon);
 
   selectPokemon(pokemon: any): void {
-    this.store.dispatch(PokemonActions.choosePokemon(pokemon));
+    this.store.dispatch(PokemonActions.selectPokemon(pokemon));
   }
 
   clearPokemon(): void {

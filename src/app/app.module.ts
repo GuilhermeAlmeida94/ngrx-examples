@@ -5,8 +5,8 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { StoreModule } from '@ngrx/store';
 import { NonTypedPokemonModule } from './non-typed-pokemon/non-typed-pokemon.module';
-import { NonTypedChoosePokemonModule } from './non-typed-choose-pokemon/non-typed-choose-pokemon.module';
-import { TypedChoosePokemonModule } from './typed-choose-pokemon/typed-choose-pokemon.module';
+import { NonTypedSelectPokemonModule } from './non-typed-select-pokemon/non-typed-select-pokemon.module';
+import { TypedSelectPokemonModule } from './typed-select-pokemon/typed-select-pokemon.module';
 
 @NgModule({
   declarations: [
@@ -17,8 +17,8 @@ import { TypedChoosePokemonModule } from './typed-choose-pokemon/typed-choose-po
     AppRoutingModule,
     StoreModule.forRoot({}, {}),
     NonTypedPokemonModule,
-    NonTypedChoosePokemonModule,
-    TypedChoosePokemonModule
+    NonTypedSelectPokemonModule,
+    TypedSelectPokemonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
