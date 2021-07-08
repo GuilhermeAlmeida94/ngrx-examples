@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { NonTypedSelectPokemonComponent } from './non-typed-select-pokemon/non-typed-select-pokemon.component';
-import { NonTypedPokemonComponent } from './non-typed-pokemon/non-typed-pokemon.component';
-import { TypedSelectPokemonComponent } from './typed-select-pokemon/typed-select-pokemon.component';
+import { NonTypedPokemonComponent } from './1-non-typed-pokemon/non-typed-pokemon.component';
+import { NonTypedSelectPokemonComponent } from './2-non-typed-select-pokemon/non-typed-select-pokemon.component';
+import { TypedSelectPokemonComponent } from './3-typed-select-pokemon/typed-select-pokemon.component';
 
 const routes: Routes = [
   {
